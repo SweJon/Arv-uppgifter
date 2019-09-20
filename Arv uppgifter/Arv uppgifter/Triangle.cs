@@ -6,16 +6,18 @@ namespace Arv_uppgifter
 {
     class Triangle : Shape
     {
-
         public Triangle(double width1, double height1) : base(width1, height1)
         { }
-        protected double Area()
+
+        public override double Area()
         {
-            double Area = width * height / 2;
+            double Area1 = width * height / 2;
+            return Area1;
         }
-        protected double Circumferance()
-            {
-                 double Circumferance = width + 
-            }
+        public override double Circumference()
+         {
+            double Circumferance1 = height + width + Math.Sqrt(width * width + height * height);
+            return Circumferance1;
+         }
     }
 }

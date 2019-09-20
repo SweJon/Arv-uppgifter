@@ -4,19 +4,20 @@ using System.Text;
 
 namespace Arv_uppgifter
 {
-    class Rectangle : Shape 
+    class Rectangle : Shape
     {
         public Rectangle(double width1, double height1) : base(width1, height1)
         { }
 
-        protected double Area()
+        public override double Area()
         {
-            double Area1 = width * height;
+            double Area2 = width * height;
+            return Area2;
         }
-        protected double Circumferance()
-            {
-               double Circumferance2 = width * 2 + height * 2;
-
-            }
-}
+        public override  double Circumference()
+        {
+            double Circumferance2 = width * 2 + height * 2;
+            return Circumferance2;
+        }
+    }
 }
